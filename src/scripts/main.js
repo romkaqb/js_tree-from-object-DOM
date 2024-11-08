@@ -37,10 +37,10 @@ function createTree(element, data) {
         createTree(li, data[key]);
       }
 
-      element.appendChild(ul);
       ul.appendChild(li);
     }
   }
+  element.appendChild(ul);
 }
 
 createTree(tree, food);
